@@ -1,1 +1,1 @@
-# NSDC-
+NSDC Competitive Project

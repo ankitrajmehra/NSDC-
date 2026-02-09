@@ -1,0 +1,193 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Navbar */
+nav{
+position:fixed;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+background:#020617;
+z-index:100;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.menu{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:34px;
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:15px;
+opacity:0.8;
+}
+
+.hero button{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+background:#22c55e;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* Sections */
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.about-text{
+max-width:700px;
+margin:auto;
+text-align:center;
+opacity:0.8;
+}
+
+/* Grid */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* Card */
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* Progress */
+.progress{
+height:6px;
+background:#020617;
+margin-top:10px;
+border-radius:10px;
+}
+
+.progress span{
+display:block;
+height:100%;
+width:0;
+background:#22c55e;
+transition:1s;
+}
+
+/* Contact */
+.contact{
+text-align:center;
+}
+
+.contact button{
+padding:12px 30px;
+background:#38bdf8;
+border:none;
+border-radius:20px;
+color:white;
+cursor:pointer;
+}
+
+/* Popup */
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:#020617;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+margin-top:40px;
+opacity:0.7;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+nav ul{
+position:absolute;
+top:60px;
+right:-100%;
+flex-direction:column;
+background:#020617;
+width:200px;
+padding:20px;
+transition:0.3s;
+}
+
+nav ul.show{
+right:0;
+}
+
+.menu{
+display:block;
+}
+
+}
